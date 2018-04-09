@@ -1,0 +1,303 @@
+body {
+	background: linear-gradient(steelblue, lightsteelblue);
+	margin: 0;
+	padding: 0;
+	padding-top: 80px;
+}
+
+.name, .surname {
+	font-family: 'Crimson Text', serif;
+	text-transform: uppercase;
+	font-size: 30px;
+}
+#index {
+	font-family: 'Crimson Text', serif;
+	text-transform: uppercase;
+	font-weight: bold;
+	color: white;
+}
+
+
+/* CABECERA */
+#main-header {
+	color: white;
+	background: linear-gradient(lightgreen, mediumseagreen);
+	height: 80px;
+	width: 100%;
+	left: 0;
+	top: 0;
+	position: fixed;
+}
+#logo-header {
+	float: left;
+	padding: 15px 0 0 20px;
+	text-decoration: none;
+	color: white;
+}
+#logo-header:hover {
+	color: #0b76a6;
+}
+#logo-header .name {
+	display: block;
+	font-weight: 700;
+	font-size: 1.2em;
+}
+#logo-header .surname {
+	display: block;
+	font-weight: 700;
+	font-size: 1.2em;
+	color: #385623FF;
+}
+#menu {
+	float: right;
+	position: absolute;
+	max-width: 280px;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	margin: auto;
+	display: block;
+	text-align: right;	
+}
+#btn-menu {
+	display: none
+}
+
+#btn-menu:hover ~ nav.desplegable, .desplegable:hover {
+	margin-left: 0;
+}
+
+#menu label {
+	line-height: 80px;
+	width: 30px;
+	height: 30px;
+	font-size: 2.5em;
+	padding: 10px;
+	border-left: 5px solid teal;
+}
+
+#menu label:hover {
+	cursor: pointer;
+	background: rgba(0,0,0,0);
+	color: darkslategrey;
+	box-shadow: inset 0 0 0 3px darkslategrey;
+	transition: all 1s;
+}
+
+.desplegable {
+	text-align: left;
+	background: linear-gradient(darkslategrey, teal);
+	width: 280px;
+	margin-left: 100%;
+	transition: all 1s;
+}
+
+nav ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	display: flex;
+	flex-direction: column;
+}
+
+nav ul li {
+	line-height: 60px;
+	border-top: 1px solid white;
+}
+nav ul li a {
+	display: block;
+	height: 60px;
+	padding: 0 10px;
+	text-decoration: none;
+}
+nav ul li a:hover {
+	background: seagreen;
+}
+
+
+
+
+
+/* CONTENIDO DE LA PAGINA */
+#main-content {
+	background: white;
+	width: 90%;
+	max-width: 1000px;
+	margin: 20px auto;
+	box-shadow: 5px 5px 5px 5px rgba(0,0,0,.5);
+}
+
+	#main-content header{
+		padding: 40px 0 0 40px;
+	}
+	#main-content .foto, .portada{
+		text-align: center;
+		margin: auto;
+	}
+	#main-content .portada{
+		background-image: url('image/telecomunicaciones.jpg');
+		background-size: 100% 100%;
+		width: 1000px;
+		height: 400px;
+		color: white;
+		background-repeat: no-repeat;
+	}
+	.portada img {
+		width: 180px;
+		height: 180px;
+		border-radius: 200px;
+		border: 7px solid teal;
+	}
+	.portada p {
+		padding-top: 0px;
+	}
+	.portada div {
+		padding-top: 120px;
+	}
+	#titulo {
+		font-size: 4em !important;
+		background-color: steelblue;
+		color: white !important;
+	}
+
+	#main-content .content {
+		padding: 40px;
+	}
+	#main-content .content table {
+		max-width: 75%;
+		margin: auto;
+		text-align: left;
+		margin-left: 10%;
+	}
+	#main-content .content #idiomas {
+		text-align: center;
+		margin-left: 7%;
+	}
+	#main-content .content #idiomas td {
+		padding-left: 25px;
+	}
+	#main-content p {
+		font-family: 'Lato', sans-serif;
+	}
+
+	#main-content h1, h3, h4, pre {
+	font-family: 'Playfair Display', serif;
+	
+	}
+	#main-content h1 {
+		color: teal;
+		text-transform: uppercase;
+		font-size: 1.5em;
+	}
+	#main-content h3 {
+		color: mediumseagreen;
+	}
+	#main-content td {
+		vertical-align: top
+	}
+	#main-content td > p{
+		margin-top: 30px
+	}
+
+/* FOOTER */
+
+#main-footer {
+	background-color: rgba(37, 74, 82, 0.9);
+	color: white;
+	text-align: center;
+	padding: 20px;
+	margin-top: 40px;
+	width: 90%;
+	margin: auto;
+	max-height: 150px;
+
+}
+	#main-footer ul li p {
+		margin: 0;
+	}
+	
+	#main-footer ul li a {
+		color: white;
+		text-decoration: none;
+		height: 90px
+	}
+	#main-footer ul {
+		list-style: none;
+	}
+	#main-footer ul li {
+		display: inline-block;
+		width: 220px;
+		text-align: center;
+	}
+	.icono {
+		width: 50px;
+		height: 50px;
+		border-radius: 200px;
+		box-shadow: 0 5px #272822FF;
+	}
+	#facebook {
+		background: #4267B2FF;
+		background-image: url('image/faceBlanco.png');
+		background-size: 50px 50px;
+		background-repeat: no-repeat;
+		background-position: center;
+	}
+	#twitter {
+		background: #2CAAE0FF;
+		background-image: url('image/twitterColor.png');
+		background-size: 50px 50px;
+		background-repeat: no-repeat;
+		background-position: center;
+	}
+	#linkedin{
+		background: #0077B5FF;
+		background-image: url('image/linkedinBlanco.png');
+		background-size: 40px 40px;
+		background-repeat: no-repeat;
+		background-position: center;
+	}
+	#github {
+		background: #24292EFF;
+		background-image: url('image/githubBlanco.png');
+		background-size: 50px 50px;
+		background-repeat: no-repeat;
+		background-position: center;
+	}
+	#gmail {
+		background: #DB4437FF;
+		background-image: url('image/gmailBlanco.png');
+		background-size: 50px 50px;
+		background-repeat: no-repeat;
+		background-position: center;
+	}
+	#facebook:hover {
+		background-image: url('image/faceColor.png');
+		background-color: #fff;
+		transition: all 500ms;
+	}
+	#twitter:hover {
+		background-image: url('image/twitter.png');
+		background-color: white;
+		transition: all 500ms;
+	}
+	#linkedin:hover {
+		background-image: url('image/linkedinColor.png');
+		background-color: white;
+		background-size: 60px 60px;
+		transition: all 500ms;
+	}
+	#github:hover {
+		background-image: url('image/githubColor.png');
+		background-color: white;
+		transition: all 500ms;
+	}
+	#gmail:hover {
+		background-image: url('image/gmailColor.png');
+		background-color: #E4746CFF;
+		transition: all 500ms;
+	}
+	
+
+	#copy {
+		padding-top: 20px;
+	}
